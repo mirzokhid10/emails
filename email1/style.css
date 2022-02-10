@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.container {
+  width: 96%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.email-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  list-style: none;
+}
+
+.nav ul li {
+  margin: 0 1rem;
+}
+
+.nav ul li a {
+  color: #000000;
+}
+
+/*ehro page*/
+
+.email {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/emailboy.png);
+  background-position: bottom center;
+  background-position-x: 40%;
+  background-repeat: no-repeat;
+  background-size: 250px;
+  padding: 7rem 0;
+}
+
+.email-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-inner > div {
+  width: 50%;
+}
+
+.email-content h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  color: #000000;
+  text-align: left !important;
+  margin: 0 0 28px 0;
+}
+
+.email-content h2,
+.email-reg h1 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 52px;
+  color: #000000;
+  margin: 5px 0 53px 0;
+}
+
+.email-content h4,
+.email-content span,
+.email-content span a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.email-reg h1 {
+  margin: 0;
+}
+
+.mainpage-row {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+}
+
+.mainpage-row > div {
+  width: 50%;
+  text-transform: capitalize;
+}
+
+.mainpage-email {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: left;
+  padding: 0;
+}
+
+.mainpage-content h4,
+.mainpage-content span,
+.mainpage-content span a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.email-reg {
+  padding: 0 4rem;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  width: 89%;
+  height: auto;
+}
+
+.email-form input[type="text"],
+.email-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.email-form input[type="text"]:focus,
+.email-form input[type="password"]:focus {
+  outline: 1px solid #ccc;
+}
+
+.additional-links {
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+
+.additional-items {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  list-style-type: none;
+}
+
+.addition-links {
+  margin: 0 1rem;
+}
+
+.additional-items a img {
+  width: 50px;
+}
+
+.email-form a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #b0b0b0;
+  text-decoration: none;
+  text-align: end;
+}
+
+.email-form button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #4d47c3;
+  box-shadow: 0px 4px 61px rgba(77, 71, 195, 0.4);
+  border-radius: 9px;
+  padding: 7px 0;
+  outline: none;
+  border: none;
+  margin: 46px 0 24px 0;
+}
+
+@media screen and (max-width: 998px) {
+  .container {
+    width: 94%;
+  }
+
+  .email {
+    background-position-x: 50%;
+  }
+
+  .email-reg {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 94%;
+  }
+
+  .email-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email-inner > div {
+    width: 100%;
+  }
+
+  .email-form {
+    width: 100%;
+  }
+
+  .email-form button {
+    width: 150px;
+  }
+}
+
+/*reg page*/
+
+.mainpage {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.mainpage-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mainpage-row > div {
+  width: 50%;
+  text-transform: capitalize;
+}
+
+.mainpage-content h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  color: #000000;
+  text-align: left !important;
+  margin: 0 0 28px 0;
+}
+
+.mainpage-content h2 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 52px;
+  color: #000000;
+  margin: 5px 0 53px 0;
+}
+
+.mainpage-content h4,
+.mainpage-content span,
+.mainpage-content span a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.mainpage-content span a {
+  text-decoration: none;
+  color: blue;
+}
+
+.mainpage-email {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: left;
+  padding: 0;
+}
+
+.mainpage-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainpage__email-box {
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.mainpage-email h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+  margin: 0 0 28px 0;
+}
+
+.mainpage-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainpage-form input[type="text"],
+.mainpage-form input[type="number"],
+.mainpage-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.mainpage-form input[type="text"]:focus,
+.mainpage-form input[type="number"],
+.mainpage-form input[type="password"]:focus {
+  outline: 1px solid #ccc;
+}
+
+.forgetbtn {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #b0b0b0;
+  margin: 17px 0 46px;
+  text-align: end;
+  width: 100%;
+}
+
+.formbtn {
+  width: 100%;
+  padding: 12px;
+  background: #4d47c3;
+  box-shadow: 0px 4px 61px rgba(77, 71, 195, 0.4);
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.mainpage-email p {
+  width: 370px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b5b5b5;
+  margin: 50px 0;
+}
+
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+.additional-links {
+  width: 370px;
+  display: flex;
+  justify-content: center;
+}
+.additional-links ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  list-style: none;
+}
+
+.additional-items {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.addition-links {
+  margin: 0 1rem;
+}
+
+.additional-links:first-of-type a img {
+  width: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 96%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .mainpage__email-box {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainpage-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainpage-row > div {
+    width: 100%;
+  }
+
+  .mainpage-content,
+  .mainpage-content h1 {
+    text-align: center !important;
+  }
+
+  .mainpage__email-box h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .email {
+    background-image: none;
+    padding: 25px;
+  }
+  .container {
+    width: 94%;
+  }
+
+  .mainpage-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainpage-row > div {
+    width: 100%;
+  }
+
+  .mainpage-content h1 {
+    font-size: 26px;
+    line-height: 39px;
+    width: 100%;
+    margin: 0 0 5px 0;
+  }
+
+  .mainpage-content h2 {
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 500;
+    width: 100%;
+    margin: 0 0 32px 0;
+  }
+
+  .mainpage-content h4,
+  .mainpage-content span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .mainpage-content span {
+    margin: 0 0 53px 0;
+  }
+
+  .mainpage-email {
+    padding: 50px 0 0 0;
+  }
+
+  .mainpage-email h1 {
+    display: none;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="password"] {
+    width: 100%;
+  }
+
+  .mainpage-email a,
+  .mainpage-email p {
+    width: 100%;
+  }
+
+  .formbtn {
+    width: 100%;
+  }
+
+  .additional-links {
+    width: 100%;
+  }
+}

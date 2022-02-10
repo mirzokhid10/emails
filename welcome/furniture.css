@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.container {
+  width: 96%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.email-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  list-style: none;
+}
+
+.nav ul li {
+  margin: 0 1rem;
+}
+
+.nav ul li a {
+  color: #000000;
+}
+
+/*furniture*/
+
+.furniture {
+  position: relative;
+  background: url(../images/furniture.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.furniture-inner {
+  display: flex;
+  justify-content: end;
+  padding: 80px 0 0 0;
+}
+
+.furniturereg {
+  padding: 44px 44px 80px 44px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.furniture-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.furniture-title section {
+  display: flex;
+  flex-direction: column;
+}
+
+.furniture-title section p {
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.furniture-title section p span,
+.furniture-title div p a {
+  color: green;
+  text-decoration: none;
+}
+
+.furniture-title section h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 82px;
+  color: #000000;
+  margin: 0;
+}
+
+.furniture-title div p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #8d8d8d;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.social-media a {
+  width: 60px;
+  height: 55px;
+  padding: 16px 18px;
+  background-color: white;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.social-media a:first-child {
+  width: 60%;
+}
+
+.social-media a img {
+  width: 25px;
+}
+
+.social-media a p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.furniture-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.furniture-form label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.furniture-form input[type="email"],
+.furniture-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-info > section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.user-info section input[type="text"] {
+  width: 90%;
+}
+
+.furniture-form input[type="email"]:focus,
+.furniture-form input[type="password"]:focus,
+.furniture__form-name input[type="text"]:focus {
+  outline: none;
+}
+
+.furniture-form input[type="email"],
+.furniture-form input[type="password"] {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.furniture-form input[type="text"],
+.furniture-form input[type="text"] {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.furniture__form-name input[type="text"] {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.furniture-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+  align-items: flex-end;
+}
+
+.furniture-btns a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4285f4;
+  text-decoration: none;
+  text-align: end;
+  margin-bottom: 40px;
+}
+
+.furniture-btns button {
+  background: #779341;
+  box-shadow: 0px 4px 19px rgba(119, 147, 65, 0.3);
+  border-radius: 10px;
+  padding: 15px 92px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 236px;
+  text-align: end;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .furniture {
+    padding: 20px 0;
+  }
+
+  .furniture-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .furniturereg {
+    padding: 44px 44px 80px 44px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/*reg*/
+
+/*welcome*/
+
+.welcome {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+
+.welcome-inner {
+  position: relative;
+  width: 100%;
+  padding: 50px 100px 85px;
+  background-image: url(../images/welcome.png);
+  background-repeat: no-repeat;
+  background-position: right -30% bottom 50%;
+  background-size: 827px 650px;
+}
+
+.welcome__signin {
+  position: relative;
+  width: 50%;
+  padding: 36px 47px 40px 35px;
+  background: #ffffff;
+  border: 1px solid #878787;
+  box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.welcome__signin h4 {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 37px;
+  color: #000000;
+  margin: 0 0 29px 0;
+}
+
+.welcome__signin h3 {
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 46px;
+  color: #000000;
+  margin: 0;
+}
+
+.welcome__signin h5 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0 0 48px 0;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-form label {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.signin-form .welcome-input {
+  background: #ffffff;
+  border: 0.6px solid #282828;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ababab;
+}
+
+.passlabel {
+  margin-top: 40px;
+}
+
+.confirmpasslabel {
+  margin: 0;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  margin: 23px 0 38px 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.checkbox-remember {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox-remember input {
+  width: 15px;
+  height: 15px;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.checkbox-remember label {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: capitalize;
+  margin: 4px 0 0 10px;
+}
+
+.checkbox a {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4d4d4d;
+  text-transform: capitalize;
+  text-decoration: none;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.signin-form button {
+  background: #000000;
+  border-radius: 6px;
+  padding: 1rem 11rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 52px;
+}
+
+.welcome__signin p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7d7d7d;
+  text-align: center;
+}
+
+.welcome__signin p a {
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .welcome-inner {
+    background-image: none;
+    padding: 0;
+    margin: 50px 0 135px 0;
+  }
+
+  .welcome__signin {
+    width: 100%;
+  }
+}
